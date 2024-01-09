@@ -27,7 +27,7 @@ export default function Footer() {
                             <div className="col-sm-12 col-md-5">
                                 <h6 className="f-heading">The Car Jaipur</h6>
                                 <p className="text-justify" style={{ color: "#EBEBEB" }}><i>DEAL WITH TRUST.</i></p>
-                                <p>The Car Jaipur the aim has always been to dream big and achieve great. Welcome to our showroom's tour. Hope that you will enjoy your time cruising through. A little warning before you scroll ahead "You can check out anytime you want but you can never leave"
+                                <p>The Car Jaipur the aim has always been to dream big and achieve great. Welcome to our showroom&apos;s tour. Hope that you will enjoy your time cruising through. A little warning before you scroll ahead &quot;You can check out anytime you want but you can never leave&quot;
                                 </p>
                             </div>
                             <div className="col-sm-12 col-md-3" >
