@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 // import div from '@mui/material/div';
 // for material ui 
+import './style.css'
 import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
 import { Checkbox } from '@mui/material';

@@ -12,7 +12,7 @@ const CustomModal = ({ isOpen, closeModal }) => {
     >
       <h2>Subscribe to our Newsletter</h2>
       {/* Your form content goes here */}
-      <form>
+      <form >
     <Input type='text' placeholder='Name'/>
     <Input type='number' placeholder='Enter Your Number'/>
         <button type="submit">Submit</button>

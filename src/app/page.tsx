@@ -1,9 +1,9 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-// import FilterSearch from './component/FilterSearch'
+// import FilterSearch from '../component/FilterSearch'
 import ImageSlider from './component/ImageSlider'
-// import Select from './component/Select';
-// import MyForm from './component/MyForm'
+// import Select from '../component/Select';
+// import MyForm from '../component/MyForm'
 // import "./style.css";
 // import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem'; import InputLabel from '@mui/material/InputLabel';
@@ -19,6 +19,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Demo from './component/Demo'
 import { Metadata } from 'next'
+// import SearchResults from '../component/Search';
 import { Inter } from 'next/font/google'
 
 
@@ -35,15 +36,7 @@ const metadata = {
 
 
 
-const exoticCars = [
 
-    { Name: 'BMW X3 i40x', Km: '12k', Src: "img/BMW 2019 .jpeg", bodytype: 'sedan', Transmission: "automatic", Year: '2023' },
-    { Name: 'Scorpio S11', Km: '182k', Src: "img/audi.jpg", bodytype: 'sedan', Transmission: "automatic", Year: '2023' },
-    { Name: 'Jaguar XFJ 2.2l', Km: '12k', Src: "img/mercedes.jpg", bodytype: 'sports', Transmission: "automatic", Year: '2021' },
-    { Name: 'Skoda Laura ', Km: '123k', Src: "img/BMW.jpg", bodytype: 'sports', Transmission: "manual", Year: '2018' },
-    { Name: 'Volvo S90', Km: '123k', Src: "img/BMW 2019 .jpeg", bodytype: 'sports', Transmission: "automatic", Year: '2020' },
-    { Name: ' Thar 4*4', Km: '123k', Src: "img/BMW.jpg", bodytype: 'sports', Transmission: "manual", Year: '2020' }
-]
 
 export default function page() {
     // const [filteredData, setFilteredData] = useState(exoticCars);
@@ -55,7 +48,7 @@ export default function page() {
             <div className='bg-white'>
                {/* <FilterSearch/> */}
             
-               {/* <Select/> */}
+            
               
             </div>
 

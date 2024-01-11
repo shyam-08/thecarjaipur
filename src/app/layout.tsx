@@ -7,7 +7,7 @@ import Footer from '../app/component/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'The Auto Mart ',
+  title: 'The car Jaipur ',
   description: 'this is a preowned luxury car company. we are  providing luxury and exotic cars at afforadable price. and we also provide consultancy service about cars. ',
 }
 

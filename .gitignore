@@ -10,6 +10,14 @@
 # testing
 /coverage
 
+# firebase
+.firebase
+.firebaserc
+firebase.json
+firebase-debug.log
+
+#github
+.github
 # next.js
 /.next/
 /out/

@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 // import Navbar from './Navbar'
 // import Footer from './Footer'
-import "./style.css";
+import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import Footer from './Footer';
 import { TextField } from '@mui/material';
@@ -36,10 +36,12 @@ export default class SaleCar extends Component {
             <div className="row SaleCar1" >
               <div className="col-md-5 col-sm-12" style={{ alignContent: 'center', padding: "40px" }}>
                 <h3>SELL YOUR LUXURY CAR</h3>
-                <h3 style={{ color: 'transparent !important', 
+                <h3 
+                // style={{ color: 'transparent !important', 
                 // webkittextstrokewidth: '1px',
                 //  webkittextstrokecolor: '#000'
-                  }}>WITHIN</h3>
+                  // }}
+                  >WITHIN</h3>
                 <h3>3 EASY STEPS.</h3>
                 <ul style={{
                   listStyle: "none", padding: "30px"
@@ -99,16 +101,23 @@ export default class SaleCar extends Component {
               </div>
               <div className="col-md-7 col-sm-12
               //  Sec1-sale
+
                " 
-              style={{ paddingLeft: '10px', paddingTop: "100px" }}
+
+              // style={{ paddingLeft: '10px', paddingTop: "100px" }}
               >
               <Image
-                         className='border-2 p-1 m-1 img-fluid'
+                         className=' p-1 m-1 
+                        //  img-fluid
+                         '
                          src="/img/sellyourcar-banner-img.png"
-                         width={800}
-                         height={400}
+                         width={700}
+                         height={600}
                          alt="header image" 
-                         style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+                         style={{ 
+                          // height: '100%', width: '95%', 
+                          objectFit: 'cover' }} 
+                         />
 
                 {/* <img src="\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "auto", width: "100%", position: "relative" }} /> */}
 
@@ -482,7 +491,7 @@ Physical Evaluation
         <div className="Section-5Sale">
           <div className="container">
             <h2 style={{ color: "whitesmoke", padding: "10px" }}>HOW TO SELL YOUR USED CARS</h2>
-            <p style={{ color: "grey", padding: "10px" }}>At TAM, we strive to provide the quickest and most hassle free car selling service available. Getting a great deal on your vehicle can often be tricky, that’s why at The Auto Mart we’ll value your vehicle based on its condition and current market value.</p>
+            <p style={{ color: "grey", padding: "10px" }}>At TCJ, we strive to provide the quickest and most hassle free car selling service available. Getting a great deal on your vehicle can often be tricky, that’s why at The Car Jaipur we’ll value your vehicle based on its condition and current market value.</p>
             <ul className="row" style={{display:"flex",flexWrap:"wrap",flexGrow:"-moz-initial",listStyle:'none',justifyContent:'center'}}>
               <li className="col-md-4">
                 <img src="\img\sellcar-instantvaluation-img.png" alt="instant valuation" />
@@ -509,13 +518,13 @@ Physical Evaluation
             <h6><strong>(NOT ONLY EXCHANGE)</strong></h6>
             <p>Sell you cars with us without the boundation of exchange only offers.</p>
             <img src="\img\bestofferin29mins-icon.png" alt="" className='Section-6Sale-Img ' />
-            <h6><strong>BEST OFFER IN 29MINS</strong></h6>
-            <p>Get the best offer of your super car in 29mins post physical/virtual valuation.</p>
+            <h6><strong>BEST OFFER SOON</strong></h6>
+            <p>Get the best offer of your super car soon post physical/virtual valuation.</p>
             <span><img src="\img\onspot-icon.png" alt="" className='
             Section-6Sale-Img 
             ' /></span>
-            <h6><strong>ON SPOT</strong></h6>
-            <p>Easy and quick on the spot payment method when you sell/exchange your cars with us.</p>
+            <h6><strong>FAST PAYMENT</strong></h6>
+            <p>Easy and quick on the fast payment method when you sell/exchange your cars with us.</p>
             <div> <img src="\img\confidentialityofseller-icon.png" alt="" className='Section-6Sale-Img  items-center justify-center' /></div>
             <h6><strong>CONFIDENTIALITY
               OF SELLER.</strong></h6>

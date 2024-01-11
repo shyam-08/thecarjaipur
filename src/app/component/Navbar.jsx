@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="flex flex-wrap items-center justify-between bg-white p-3 font-bold ">
       <div>
-        <Link href="/home" passHref>
+        <Link href="/" passHref>
         The Car Jaipur
         </Link>
       </div>
