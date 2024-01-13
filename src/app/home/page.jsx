@@ -1,9 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-// import FilterSearch from '../component/FilterSearch'
 import ImageSlider from '../component/ImageSlider'
-// import Select from '../component/Select';
-// import MyForm from '../component/MyForm'
 import "./style.css";
 // import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem'; import InputLabel from '@mui/material/InputLabel';
@@ -30,7 +27,7 @@ const inter = Inter({
 
 const metadata = {
     title: 'Home',
-    description: 'you can share your car at auto mart '
+    description: 'you can sell your car at the car jaipur '
 
 }
 
@@ -39,14 +36,11 @@ const metadata = {
 
 
 export default function page() {
-    // const [filteredData, setFilteredData] = useState(exoticCars);
-    // const handleFilter = (filteredData) => {
-    //     setFilteredData(filteredData);
-    //   };
+   
     return (
         <div>
             <div className='bg-white'>
-               {/* <FilterSearch/> */}
+              
             
             
               

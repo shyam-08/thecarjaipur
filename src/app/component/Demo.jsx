@@ -392,15 +392,16 @@
 // }
 
 // export default Demo;
-
+"use client"
 import React, { useState } from 'react';
 import Typography from "@mui/material/Typography";
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { Box, Card, Divider } from '@mui/material';
+import { Box, Card, Divider, Link } from '@mui/material';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 // import Divider from '@mui/material/Divider';
-
+// import { useNavigate } from "react-router-dom";
+import { useRouter } from 'next/navigation';
 const pricesRange = [
   {
     Name: '1 to 2 lac',
@@ -585,26 +586,34 @@ const Transmission = [
 ]
 const exoticCars = [
 
-  { Name: 'BMW X3 XDrive20D', Km: '71k', Src: "img/BMW 2019 .jpeg", bodyType: 'SEDAN', Transmission: "AUTOMATIC", Year: '2019', fuel: 'PETROL', pricesRange: '5,500,000', brand: 'BMW' ,owner:'1st'},
-  {Name:'BMW 7 Series 730LD', Km:'44k' ,Src:"img/BMW 7 SEREIES SIGNATURE 2020.jpeg",bodyType:'SEDAN',Transmission:'AUTOMATIC',Year:'2020',fuel:'DIESEL',pricesRange:'10,500,000',brand:'BMW',owner:'1st'},
-  { Name: 'BMW X1 SDrive20I', Km: '71k', Src: "img/BMW X1 S DRIVE 20I 2022.jpeg", bodyType: 'SUV', Transmission: "AUTOMATIC", Year: '2019', fuel: 'DIESEL', pricesRange: '5,500,000', brand: 'BMW' ,owner:'1st'},
-  { Name: 'Jaguar XF 2.0L', Km: '70k', Src: "img/mercedes.jpg", bodyType: 'SEDAN', Transmission: "AUTOMATIC", Year: '2018', fuel: 'DIESEL', pricesRange: '3,900,000', brand: 'JAGUAR',owner:'1st' },
+  { Name: 'BMW X3 XDrive20D', Km: '71k', Src: "img/BMW 2019 .jpeg", bodyType: 'SEDAN', Transmission: "AUTOMATIC", Year: '2019', fuel: 'PETROL', pricesRange: '5,500,000', brand: 'BMW' ,owner:'1st',  MakeYear:'2020'},
+  {Name:'BMW 7 Series 730LD', Km:'44k' ,Src:"img/BMW 7 SEREIES SIGNATURE 2020.jpeg",bodyType:'SEDAN',Transmission:'AUTOMATIC',Year:'2020',fuel:'DIESEL',pricesRange:'10,500,000',brand:'BMW',owner:'1st',  MakeYear:'2020'},
+  { Name: 'BMW X1 SDrive20I', Km: '71k', Src: "img/BMW X1 S DRIVE 20I 2022.jpeg", bodyType: 'SUV', Transmission: "AUTOMATIC", Year: '2019', fuel: 'DIESEL', pricesRange: '5,500,000', brand: 'BMW' ,owner:'1st',  MakeYear:'2020'},
+  { Name: 'Jaguar XF 2.0L', Km: '70k', Src: "img/mercedes.jpg", bodyType: 'SEDAN', Transmission: "AUTOMATIC", Year: '2018', fuel: 'DIESEL', pricesRange: '3,900,000', brand: 'JAGUAR',owner:'1st' ,  MakeYear:'2020'},
   
-  { Name: 'MahindraScorpio S11', Km: '182k', Src: "img/audi.jpg", bodyType: 'SEDAN', Transmission: "MANUAL", Year: '2023', fuel: 'PETROL', pricesRange: '500000', brand: 'MERCEDIES' ,owner:'1st'},
-  { Name: 'Skoda Laura ', Km: '123k', Src: "img/BMW.jpg", bodyType: 'SUV', Transmission: "MANUAL", Year: '2018', fuel: 'PETROL', pricesRange: '700000', brand: 'AUDI',owner:'1st' },
-  { Name: 'Volvo S90', Km: '123k', Src: "img/BMW 2019 .jpeg", bodyType: 'SEDAN', Transmission: "AUTOMATIC", Year: '2020', fuel: 'DIESEL', pricesRange: '1500000', brand: 'MAHINDRA',owner:'1st'},
-  { Name: 'Mahindra Thar 4*4', Km: '123k', Src: "img/BMW.jpg", bodyType: 'HATCHBACK', Transmission: "MANUAL", Year: '2020', fuel: 'DIESEL', pricesRange: '5000000', brand: 'FORD',owner:'1st' },
+  { Name: 'MahindraScorpio S11', Km: '182k', Src: "img/audi.jpg", bodyType: 'SEDAN', Transmission: "MANUAL", Year: '2023', fuel: 'PETROL', pricesRange: '500000', brand: 'MERCEDIES' ,owner:'1st',  MakeYear:'2020'},
+  { Name: 'Skoda Laura ', Km: '123k', Src: "img/BMW.jpg", bodyType: 'SUV', Transmission: "MANUAL", Year: '2018', fuel: 'PETROL', pricesRange: '700000', brand: 'AUDI',owner:'1st' ,  MakeYear:'2025'},
+  { Name: 'Volvo S90', Km: '123k', Src: "img/BMW 2019 .jpeg", bodyType: 'SEDAN', Transmission: "AUTOMATIC", Year: '2020', fuel: 'DIESEL', pricesRange: '1500000', brand: 'MAHINDRA',owner:'1st',  MakeYear:'2030'},
+  { Name: 'Mahindra Thar 4*4', Km: '123k', Src: "img/BMW.jpg", bodyType: 'HATCHBACK', Transmission: "MANUAL", Year: '2020', fuel: 'DIESEL', pricesRange: '5000000', brand: 'FORD',owner:'1st', MakeYear:'2020' },
 
 ]
 
 const Demo = () => {
+  // const [carDetail,setCardetail]=useState()
+  // const [exoticCars,setExotiCars]=useState()
   const [selectedPriceRange, setSelectedPriceRange] = useState('all');
   const [selectedBrand, setSelectedBrand] = useState('all');
   const [selectedKMS, setSelectedKMS] = useState('all');
   const [selectedFUEL, setSelectedFUEL] = useState('all');
   const [selectedBodyType, setSelectedBodyType] = useState('all');
   const [selectedTransmission, setSelectedTransmission] = useState('all');
-
+  
+  const Router = useRouter();
+  const handleClick =(car)=>{
+// setCardetail()
+// setExotiCars(e)
+Router.push('/cardetail')
+  }
   const pricesRangeHandler = (e) => {
     setSelectedPriceRange(e.target.value);
   };
@@ -615,6 +624,7 @@ const Demo = () => {
 
   const KMSHandler = (e) => {
     setSelectedKMS(e.target.value);
+
   };
 
   const FUELHandler = (e) => {
@@ -763,7 +773,7 @@ const Demo = () => {
             <Box sx={{ display: 'inline-flex' }} key={car.Name}>
 
               <Box className='shadow-lg'>
-                <Card sx={{ Width: 445, margin: 2 }} >
+                <Card sx={{ Width: 445, margin: 2 }} onClick={handleClick} >
                   <CardMedia
                     sx={{ height: 240 }}
                     image={car.Src}

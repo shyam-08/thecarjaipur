@@ -39,17 +39,12 @@ const metadata = {
 
 
 export default function page() {
-    // const [filteredData, setFilteredData] = useState(exoticCars);
-    // const handleFilter = (filteredData) => {
-    //     setFilteredData(filteredData);
-    //   };
+
     return (
         <div>
             <div className='bg-white'>
-               {/* <FilterSearch/> */}
-            
-            
-              
+
+
             </div>
 
             <div className='section-1Home headerimg  head-text'>
@@ -74,7 +69,7 @@ export default function page() {
                     */}
 
                 {/* </div> */}
-                <ImageSlider/>
+                <ImageSlider />
             </div>
             {/* <motion.div className='section-2Home'
                 initial={{ opacity: 0 }}
@@ -151,10 +146,10 @@ export default function page() {
 
                 </div>
             </motion.div> */}
-           
-<div>
-    <Demo/>
-</div>
+
+            <div>
+                <Demo />
+            </div>
             {/* <motion.div className='section-3Home'
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }} style={{ boxSizing: "border-box" }}>
