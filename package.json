@@ -1,5 +1,5 @@
 {
-  "name": "the-auto-mart3",
+  "name": "the-car-jaipur",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,15 +17,31 @@
     "@mui/material": "^5.14.20",
     "bootstrap": "^5.3.2",
     "framer-motion": "^10.16.4",
+    "@emotion/cache": "^11.11.0",
+    "@mui/styled-engine-sc": "^5.14.8",
     "next": "^14.0.4",
+    "@emotion/styled": "^11.11.0",
+    "babel-plugin-macros": "^3.1.0",
+    "@qiuz/react-image-map": "^1.1.8",
+  "react-swipeable": "^7.0.1",
+      
+      "styled-components": "^5.3.11",
+      "@mui-treasury/components": "^1.10.1",
+      
+      
+      
+  "@types/react": "^18",
+  
     "next-seo": "^6.4.0",
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
+    "react-slick": "^0.29.0",
     "react-swipeable-views": "^0.14.0",
     "react-window": "^1.8.9",
-    "sharp": "^0.33.1"
+    "sharp": "^0.33.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",
